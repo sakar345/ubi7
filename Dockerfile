@@ -1,7 +1,3 @@
-FROM scratch
-COPY hello /app
-WORKDIR /app
-RUN chown -R admin:admin /app
-RUN chmod 755 /app
-USER admin
-CMD ["/hello"] 
+FROM ubuntu
+RUN apt-get update && apt-get install -y iputils-ping
+CMD bash
