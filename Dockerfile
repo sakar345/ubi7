@@ -1,5 +1,3 @@
-FROM scratch
-COPY hello /
-RUN chmod +x hello /
-CMD ["/hello"]
-CMD ["-d"]
+FROM ubuntu:latest
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]
