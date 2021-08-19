@@ -1,4 +1,4 @@
-FROM koji/image-build
+FROM registry.access.redhat.com/koji/image-build
 
 MAINTAINER Red Hat, Inc.
 
