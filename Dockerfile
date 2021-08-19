@@ -1,5 +1,4 @@
 FROM scratch
-RUN useradd -ms /bin/bash admin
 COPY hello /app
 WORKDIR /app
 RUN chown -R admin:admin /app
