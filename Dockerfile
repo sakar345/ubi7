@@ -1,6 +1,6 @@
 FROM scratch
 COPY hello /
-USER 1001
+USER root
 EXPOSE 8080
 ENTRYPOINT ["./bin/www"]
 CMD ["/hello"]
